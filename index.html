@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="localStorage.js" defer></script>
+    <title>Debug</title>
+</head>
+<body>
+     <section id="contact" tabindex="16">
+        <h1 class="playfair" aria-label="Lets get started.">Get Started</h1>
+        <p class="poppins">
+          See if you can find why this form isn't loading what I write in the input fields when I reload or close and open the page without submiting the form.
+        </p>
+        <form action="https://formspree.io/f/myyazjoo" method="post">
+          <ul class="poppins">
+            <li class="input-container">
+              <label for="name" aria-label="Please enter your">
+                <abbr title="Required"> Your name<strong>*</strong> </abbr>
+              </label>
+              <input
+                type="text"
+                id="name"
+                class="formInput"
+                name="user_name"
+                maxlength="30"
+                required
+                aria-label="name."
+                tabindex="17"
+              />
+            </li>
+            <li class="input-container">
+              <label for="email" aria-label="Please enter your"
+                ><abbr title="Required">Your email<strong>*</strong></abbr>
+              </label>
+              <input
+                name="user_email"
+                id="email"
+                class="formInput"
+                type="email"
+                required
+                aria-label="email."
+                tabindex="18"
+              />
+            </li>
+          </ul>
+          <label for="msg" class="msgLbl poppins" aria-label="Please describe">
+            <abbr title="Required">Message<strong>*</strong></abbr>
+          </label>
+          <textarea
+            name="msg"
+            id="msg"
+            class="formInput poppins"
+            placeholder="Enter your message here..."
+            maxlength="500"
+            required
+            aria-label="your project in less than 500 characters."
+            tabindex="19"
+          ></textarea>
+          <button type="submit" class="btnBlue" aria-label="Send message" tabindex="20">
+            Start collaboration
+          </button>
+          <small id="errorMsg"></small>
+        </form>
+      </section>
+</body>
+</html>
